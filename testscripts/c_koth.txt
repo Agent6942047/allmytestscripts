@@ -1,0 +1,66 @@
+ent_fire platform* kill;ent_fire frog* kill;
+alias makefrog "prop_dynamic_create props_2fort/frog";
+alias dickrock "prop_dynamic_create props_mining/rock005";
+alias makeplatform "prop_dynamic_create props_trainyard/crane_platform001";
+alias makehorse2 "prop_dynamic_create props_c17/statue_horse";
+alias makeplank "prop_dynamic_create props_mining/support_wall001a"
+impulse 101;noclip;setpos -5457 -563 571;setang 90 0;test_wait .02;
+makeplatform;test_wait .02;
+ent_setname platform1;test_wait .02;
+ent_fire platform1 addoutput "origin -5557 1306 197";ent_fire platform1 addoutput "angles 45 180";
+makeplatform;test_wait .02;
+ent_setname platform2;test_wait .02;
+ent_fire platform2 addoutput "origin -5340 1306 416";ent_fire platform2 addoutput "angles 45 180";
+makeplatform;test_wait .02;
+ent_setname platform3;test_wait .02;
+ent_fire platform3 addoutput "origin -5124 1306 635";ent_fire platform3 addoutput "angles 45 180";
+makeplatform;test_wait .02;
+ent_setname platform4;test_wait .02;
+ent_fire platform4 addoutput "origin -4850 1280 760";ent_fire platform4 addoutput "angles 0 180";
+makeplatform;test_wait .02;
+ent_setname platform5;test_wait .02;
+ent_fire platform5 addoutput "origin -4530 1280 730";ent_fire platform5 addoutput "angles 10 0";
+makeplatform;test_wait .02;
+ent_setname platform7;test_wait .02;
+ent_fire platform7 addoutput "origin -4139 1306 460";ent_fire platform7 addoutput "angles 45 0";
+makeplatform;test_wait .02;
+ent_setname platform8;test_wait .02;
+ent_fire platform8 addoutput "origin -3920 1306 240";ent_fire platform8 addoutput "angles 45 0";
+makeplatform;test_wait .02;
+ent_setname platform9;test_wait .02;
+ent_fire platform9 addoutput "origin -4250 1306 580";ent_fire platform9 addoutput "angles 45 0";
+ent_fire platform1 color 225+0+0;
+ent_fire platform2 color 225+0+0;
+ent_fire platform3 color 225+0+0;
+ent_fire platform4 color 225+0+0;
+ent_fire platform5 color 225+0+0;
+ent_fire platform7 color 225+0+0;
+ent_fire platform8 color 225+0+0;
+ent_fire platform9 color 225+0+0;
+makefrog;test_wait .02;
+ent_setname F;test_wait .02;
+ent_fire F addoutput "origin -4550 245 325";ent_fire F addoutput "angles 0 0";
+ent_fire F color 225+0+225;
+makehorse2;test_wait .02;
+ent_setname horse2;test_wait .02;
+ent_fire horse2 addoutput "origin -5503 -182 140";ent_fire horse2 addoutput "angles 0 -90";
+makehorse2;test_wait .02;
+ent_setname horse3;test_wait .02;
+ent_fire horse3 addoutput "origin -3582 700 140";ent_fire horse3 addoutput "angles 0 90";
+makeplatform;test_wait .02;
+ent_setname platform10;test_wait .02;
+ent_fire platform10 addoutput "origin -5125 -824 250";ent_fire platform10 addoutput "angles 45 180";
+makeplatform;test_wait .02;
+ent_setname platform11;test_wait .02;
+ent_fire platform11 addoutput "origin -4909 -824 465";ent_fire platform11 addoutput "angles 45 180";
+makeplatform;test_wait .02;
+ent_setname platform12;test_wait .02;
+ent_fire platform12 addoutput "origin -4693 -824 680";ent_fire platform12 addoutput "angles 45 180";
+ent_fire platform10 color 0+0+225;
+ent_fire platform11 color 0+0+225;
+ent_fire platform12 color 0+0+225;
+
+say Ive added some iMPrOvEMeNTs
+
+
+///

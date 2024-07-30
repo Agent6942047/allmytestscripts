@@ -1,0 +1,28 @@
+//smart system by @mooonpaste
+Ent_fire MoonRel kill;
+Ent_fire Logic_Relay Addoutput"ClassName BeforeIWasARelay"
+Test_wait .02;
+//Smart system by @moonpaste
+Ent_fire Point_ClientCommand kill;
+Ent_fire prop_dynamic Addoutput"ClassName BeforeIWasaProp"
+Ent_fire moon* kill //as long as they share the same CLASSNAME, this is fine.
+Test_Wait .02;
+
+Ent_create Point_ClientCommand;
+Ent_create Logic_Relay
+Test_wait .01;
+
+Ent_fire Logic_Relay Addoutput"TargetName MoonRel"
+Test_wait .02;
+
+Ent_fire MoonRel Addoutput"ClassName Moon"
+Ent_fire MoonRel Addoutput"OnTrigger MoonFrog,Alpha,0"
+Ent_fire MoonRel Addoutput"OnTrigger MPcc,command fps_max 31"
+Ent_fire MoonRel Addoutput"OnTrigger MPcc,command net_graph 0"
+Ent_fire MoonRel Addoutput"OnTrigger MPcc,command cl_showfps 0"
+Ent_fire MoonRel Addoutput"OnTrigger MPcc,command Say NOT INFECTED!!!,.04"
+Ent_fire MoonRel Addoutput"OnTrigger MoonFrog,Alpha,255,.06"Should be activated last.
+
+Ent_fire MoonFrog color 255; //Red
+Ent_fire MoonFrog aplha 255; //display frog
+Say shoot red frog to revert game settings to default 30fps, 30fps is perfered for high ping player so if your not near the United States id recommend to revert back to 30fps

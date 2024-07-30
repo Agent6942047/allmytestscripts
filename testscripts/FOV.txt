@@ -1,0 +1,15 @@
+viewmodel_fov 54;test_wait .02;
+fov 75
+fps_max 45
+cl_showfps 0
+net_graph 0
+mat_motion_blur_enabled 0
+r_drawviewmodel 1;
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname example"
+ent_fire example addoutput"OnPlayerOutZone point_clientcommand,command,mat_motion_blur_enabled 0"
+ent_fire example CountPlayersInZone
+ent_fire example kill:1
+
+
+///

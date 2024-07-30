@@ -1,0 +1,2 @@
+mp_respawnwavetime 9;
+say respawn time re enabled!

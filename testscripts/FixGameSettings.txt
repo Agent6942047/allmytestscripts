@@ -1,0 +1,8 @@
+mp_autoteambalance 1;
+mp_friendlyfire 0;
+mp_allowspectators 1;mm_max_spectators 16;
+
+name Gabe Newell[IDLE];
+say spectator re enable dont sit afk in spec or u kick
+
+///

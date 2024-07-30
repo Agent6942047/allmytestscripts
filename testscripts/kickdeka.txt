@@ -1,0 +1,33 @@
+mp_idledealmethod 1;mp_idlemaxtime 2;mp_allowspectators 0;
+give point_servercommand;ent_fire point_servercommand addoutput"targetname psc";
+test_wait .05;
+ent_create logic_timer;ent_fire logic_timer addoutput"hammerid 661";
+test_wait .05;
+ent_keyvalue 661 targetname"tmr" RefireTime"1.5";
+ent_keyvalue 661 OnTimer"psc,command,kick |IXxRonyxXI|";
+ent_keyvalue 661 OnTimer"psc,command,kick vnsb";
+ent_keyvalue 661 OnTimer"psc,command,kick OnlyCoyote14559";
+ent_keyvalue 661 OnTimer"psc,command,kick Saltybatman4";
+ent_keyvalue 661 OnTimer"psc,command,kick Chobocoda";
+ent_keyvalue 661 OnTimer"psc,command,kick ducksauce6";
+ent_keyvalue 661 OnTimer"psc,command,kick McTubby";
+ent_keyvalue 661 OnTimer"psc,command,kick InphaseDock V3";
+ent_keyvalue 661 OnTimer"psc,command,kick SpearHeadJoe";
+ent_keyvalue 661 OnTimer"psc,command,kick Dekaparty";
+ent_keyvalue 661 OnTimer"psc,command,kick Lunarized";
+ent_keyvalue 661 OnTimer"psc,command,kick Delfy 2";
+ent_keyvalue 661 OnTimer"psc,command,kick SaulGaming8907";
+ent_keyvalue 661 OnTimer"psc,command,kick LawfulJarl60863";
+ent_keyvalue 661 OnTimer"psc,command,kick Rub My Wussee";
+ent_keyvalue 661 OnTimer"psc,command,kick Knneegrowz";
+ent_keyvalue 661 OnTimer"psc,command,kick TootiePlot21838";
+ent_keyvalue 661 OnTimer"psc,command,kick Unknown908";
+ent_keyvalue 661 OnTimer"psc,command,kick Marjongamer4963";
+ent_keyvalue 661 OnTimer"psc,command,kick darkfiredgamer2";
+ent_keyvalue 661 OnTimer"psc,command,kick pyskonamy";
+ent_keyvalue 661 OnTimer"psc,command,kick RitzyCoder20482";
+ent_keyvalue 661 OnTimer"psc,command,kick adriiixxs";
+ent_fire tmr enable;
+
+
+///

@@ -1,0 +1,33 @@
+net_graph 1
+fps_max 60
+ent_create point_clientcommand
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname example"
+ent_fire example addoutput"OnPlayerOutZone point_clientcommand,command,fps_max 60"
+ent_fire example CountPlayersInZone
+ent_fire example kill:1
+
+ent_create point_clientcommand
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname example"
+ent_fire example addoutput"OnPlayerOutZone point_clientcommand,command,net_graph 1"
+ent_fire example CountPlayersInZone
+ent_fire example kill:1
+
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname example"
+ent_fire example addoutput"OnPlayerOutZone point_clientcommand,command,mat_motion_blur_enabled 0"
+ent_fire example CountPlayersInZone
+ent_fire example kill:1
+
+ent_create point_clientcommand
+ent_create game_zone_player
+ent_fire game_zone_player addoutput"targetname example"
+ent_fire example addoutput"OnPlayerOutZone point_clientcommand,command,cl_showfps 0"
+ent_fire example CountPlayersInZone
+ent_fire example kill:1
+
+say shoot frog to revert 2 greenfpscounter if u no want 60fps go 2 mainmenu of orangebox gameselect screen and reopen tf2 
+Test_wait .01fps_max 60
+
+///

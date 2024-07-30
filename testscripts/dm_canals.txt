@@ -1,0 +1,691 @@
+ent_remove_all ai_pier_cops2;ent_remove_all prop_physics;ent_remove_all schedule_piercop0_1;ent_remove_all trigger_multiple
+ent_fire prop_dynamic addoutput "classname PDYN"
+ent_fire prop_physics addoutput "classname PPHY"
+ent_fire func_regenerate addoutput "classname RGEN"
+ent_fire trigger_hurt addoutput "classname THRT"
+ent_fire func_respawnroom addoutput "classname RROOM"
+ent_fire func_respawnroomvisualizer addoutput "classname RROOMV"
+ent_fire func_brush addoutput "classname BRSH"
+ent_fire info_player_teamspawn addoutput "classname SPN"
+ent_fire trigger_multiple addoutput "classname TRGR"
+ent_fire logic_timer addoutput "classname LTMR"ent_fire logic_relay addoutput "classname LRLY"ent_fire game_text addoutput "classname GTXT"ent_fire item_* addoutput "classname ITM"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/exterior_fence002e
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -280 -256 -355.625"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/exterior_fence002e
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -280 -764 -355.625"
+ent_fire prop_dynamic addoutput "angles 0 180 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/portable_stairs001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -1434 -626 -383"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/exterior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -1168 -3358 -307.625"
+ent_fire prop_dynamic addoutput "angles 0 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/exterior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -1264 -3358 -307.625"
+ent_fire prop_dynamic addoutput "angles 0 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/exterior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -448 -1008 -355.625"
+ent_fire prop_dynamic addoutput "angles 0 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/exterior_fence002c
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -332 -1008 -355.625"
+ent_fire prop_dynamic addoutput "angles 0 90 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_trainyard/crane_platform001
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -234 -1528 -386"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/horizontalcoolingtank04
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -1042 -586 -323.348"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+prop_dynamic_create props_wasteland/horizontalcoolingtank04
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -1042 -474 -323.348"
+ent_fire prop_dynamic addoutput "angles 0 0 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 0"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 255 255 255"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2433.58 -1771.6 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2433.58 -1771.6 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2347.49 -833.12 -372"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2347.49 -833.12 -372"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1401.18 -855.23 -244"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1401.18 -855.23 -244"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1413.07 -1766.01 -248"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1413.07 -1766.01 -248"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2431.09 -1531.52 -244"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2431.09 -1531.52 -244"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2244.15 -2214.12 -184"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2244.15 -2214.12 -184"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2528.9 -2880.07 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2528.9 -2880.07 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2328.19 -3150.06 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2328.19 -3150.06 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1591.58 -2936.49 -247.61"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1591.58 -2936.49 -247.61"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -642.92 -2507.5 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -642.92 -2507.5 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -470.29 -1330.15 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -470.29 -1330.15 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -384.4 -58.08 -424"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -384.4 -58.08 -424"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1599.3 166.27 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1599.3 166.27 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -688.15 156.6 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -688.15 156.6 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -654.42 -904.32 -248.59"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -654.42 -904.32 -248.59"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_ammopack_full
+test_wait 0.005
+ent_fire item_ammopack_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -854.12 -1392.15 -375"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -854.12 -1392.15 -375"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1966.18 -1300.35 -247.61"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1966.18 -1300.35 -247.61"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2460.35 -841.61 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2460.35 -841.61 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1888.73 -1082.17 -374"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1888.73 -1082.17 -374"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2077.3 -1568.27 -374"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2077.3 -1568.27 -374"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -2201.11 -1953.07 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -2201.11 -1953.07 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1926.89 -2605.84 -247.61"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1926.89 -2605.84 -247.61"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1020.72 -3089.3 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1020.72 -3089.3 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -103.06 -3136.63 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -103.06 -3136.63 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1142.14 -3260.14 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1142.14 -3260.14 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create item_healthkit_full
+test_wait 0.005
+ent_fire item_healthkit_full addoutput "targetname ITMT"
+ent_fire ITMT addoutput "origin -1134.34 -2399.99 -376"
+ent_fire ITMT addoutput "OnPlayerTouch !self:addoutput:origin -1134.34 -2399.99 -376"
+ent_fire ITMT addoutput "classname ITM"
+ent_fire ITMT addoutput "targetname ITM"
+test_wait 0.025
+
+ent_create logic_timer
+test_wait 0.005
+ent_fire logic_timer addoutput "targetname TIMER"
+ent_fire TIMER addoutput "OnTimer player,setteam,3"
+ent_fire TIMER addoutput "OnTimer xmText,display"
+ent_fire TIMER addoutput "targetname logic_timer"
+test_wait 0.025
+
+prop_dynamic_create flag/flag
+test_wait 0.005
+ent_fire prop_dynamic addoutput "origin -1164 -170 -122"
+ent_fire prop_dynamic addoutput "angles 0 298 0"
+ent_fire prop_dynamic addoutput "targetname "
+ent_fire prop_dynamic addoutput "solid 6"
+ent_fire prop_dynamic addoutput "skin 2"
+ent_fire prop_dynamic addoutput "renderamt 255"
+ent_fire prop_dynamic addoutput "rendercolor 20 211 10"
+ent_fire prop_dynamic addoutput "renderfx 0"
+ent_fire prop_dynamic addoutput "rendermode 0"
+ent_fire prop_dynamic addoutput "classname PDYN"
+test_wait 0.025
+
+ent_create game_text
+test_wait 0.005
+ent_fire game_text addoutput "targetname xmText"
+ent_fire game_text addoutput "x 0.05"
+ent_fire game_text addoutput "y 0.05"
+ent_fire game_text addoutput "color 255 80 0"
+ent_fire game_text addoutput "color2 255 80 0"
+ent_fire game_text addoutput "channel 1"
+ent_fire game_text addoutput "holdtime 0.075"
+ent_fire game_text addoutput "message dm_canals by 0x2480"
+ent_fire game_text addoutput "spawnflags 1"
+ent_fire game_text display
+ent_fire game_text addoutput "classname GTXT"
+test_wait 0.025
+
+ent_create func_brush
+test_wait 0.005
+ent_fire func_brush addoutput "origin -235 -1147 332.5"
+ent_fire func_brush addoutput "mins -273 -123 -756.5"
+ent_fire func_brush addoutput "maxs 273 123 756.5"
+ent_fire func_brush addoutput "solid 2"
+ent_fire func_brush addoutput "spawnflags 1"
+ent_fire func_brush addoutput "classname BRSH"
+test_wait 0.025
+
+ent_create func_brush
+test_wait 0.005
+ent_fire func_brush addoutput "origin -110.12 -639 274.085"
+ent_fire func_brush addoutput "mins -148.12 -631 -814.915"
+ent_fire func_brush addoutput "maxs 148.12 631 814.915"
+ent_fire func_brush addoutput "solid 2"
+ent_fire func_brush addoutput "spawnflags 1"
+ent_fire func_brush addoutput "classname BRSH"
+test_wait 0.025
+
+ent_create func_brush
+test_wait 0.005
+ent_fire func_brush addoutput "origin 25.405 -1782.87 244.5"
+ent_fire func_brush addoutput "mins -12.595 -512.87 -844.5"
+ent_fire func_brush addoutput "maxs 12.595 512.87 844.5"
+ent_fire func_brush addoutput "solid 2"
+ent_fire func_brush addoutput "spawnflags 1"
+ent_fire func_brush addoutput "classname BRSH"
+test_wait 0.025
+
+ent_create func_brush
+test_wait 0.005
+ent_fire func_brush addoutput "origin -698.105 -3431.705 360"
+ent_fire func_brush addoutput "mins -635.165 -57.61499 -736"
+ent_fire func_brush addoutput "maxs 635.165 57.61499 736"
+ent_fire func_brush addoutput "solid 2"
+ent_fire func_brush addoutput "spawnflags 1"
+ent_fire func_brush addoutput "classname BRSH"
+test_wait 0.025
+
+ent_create func_brush
+test_wait 0.005
+ent_fire func_brush addoutput "origin -2.254999 -2843.905 296"
+ent_fire func_brush addoutput "mins -60.685 -530.1851 -800"
+ent_fire func_brush addoutput "maxs 60.685 530.1851 800"
+ent_fire func_brush addoutput "solid 2"
+ent_fire func_brush addoutput "spawnflags 1"
+ent_fire func_brush addoutput "classname BRSH"
+test_wait 0.025
+
+ent_create info_player_teamspawn
+test_wait 0.005
+ent_fire info_player_teamspawn addoutput "targetname DM_SPAWN"
+ent_fire DM_SPAWN addoutput "classname SPN"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle1"
+ent_fire dmHandle1 addoutput "origin -578.55 100.69 -384"
+ent_fire dmHandle1 addoutput "angles 0 241.5 0"
+ent_fire dmHandle1 addoutput "OnTrigger DM_SPAWN:addoutput:origin -578.55 100.69 -368"
+ent_fire dmHandle1 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 241.5 0"
+ent_fire dmHandle1 addoutput "OnTrigger dmHandle2:trigger::0.001"
+ent_fire dmHandle1 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle2"
+ent_fire dmHandle2 addoutput "origin -1611.56 40.39 -384"
+ent_fire dmHandle2 addoutput "angles 0 0 0"
+ent_fire dmHandle2 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1611.56 40.39 -368"
+ent_fire dmHandle2 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 0 0"
+ent_fire dmHandle2 addoutput "OnTrigger dmHandle3:trigger::0.001"
+ent_fire dmHandle2 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle3"
+ent_fire dmHandle3 addoutput "origin -585.96 -790.76 -384"
+ent_fire dmHandle3 addoutput "angles 0 112 0"
+ent_fire dmHandle3 addoutput "OnTrigger DM_SPAWN:addoutput:origin -585.96 -790.76 -368"
+ent_fire dmHandle3 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 112 0"
+ent_fire dmHandle3 addoutput "OnTrigger dmHandle4:trigger::0.001"
+ent_fire dmHandle3 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle4"
+ent_fire dmHandle4 addoutput "origin -454.74 -971.19 -432"
+ent_fire dmHandle4 addoutput "angles 0 51.5 0"
+ent_fire dmHandle4 addoutput "OnTrigger DM_SPAWN:addoutput:origin -454.74 -971.19 -416"
+ent_fire dmHandle4 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 51.5 0"
+ent_fire dmHandle4 addoutput "OnTrigger dmHandle5:trigger::0.001"
+ent_fire dmHandle4 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle5"
+ent_fire dmHandle5 addoutput "origin -1187.4 -1072.69 -384"
+ent_fire dmHandle5 addoutput "angles 0 318 0"
+ent_fire dmHandle5 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1187.4 -1072.69 -368"
+ent_fire dmHandle5 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 318 0"
+ent_fire dmHandle5 addoutput "OnTrigger dmHandle6:trigger::0.001"
+ent_fire dmHandle5 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle6"
+ent_fire dmHandle6 addoutput "origin -1164.55 -1877.43 -384"
+ent_fire dmHandle6 addoutput "angles 0 216.5 0"
+ent_fire dmHandle6 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1164.55 -1877.43 -368"
+ent_fire dmHandle6 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 216.5 0"
+ent_fire dmHandle6 addoutput "OnTrigger dmHandle7:trigger::0.001"
+ent_fire dmHandle6 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle7"
+ent_fire dmHandle7 addoutput "origin -113.07 -3320.65 -384"
+ent_fire dmHandle7 addoutput "angles 0 139.5 0"
+ent_fire dmHandle7 addoutput "OnTrigger DM_SPAWN:addoutput:origin -113.07 -3320.65 -368"
+ent_fire dmHandle7 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 139.5 0"
+ent_fire dmHandle7 addoutput "OnTrigger dmHandle8:trigger::0.001"
+ent_fire dmHandle7 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle8"
+ent_fire dmHandle8 addoutput "origin -1377.07 -3281.43 -384"
+ent_fire dmHandle8 addoutput "angles 0 58.5 0"
+ent_fire dmHandle8 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1377.07 -3281.43 -368"
+ent_fire dmHandle8 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 58.5 0"
+ent_fire dmHandle8 addoutput "OnTrigger dmHandle9:trigger::0.001"
+ent_fire dmHandle8 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle9"
+ent_fire dmHandle9 addoutput "origin -1919.23 -3110.83 -384"
+ent_fire dmHandle9 addoutput "angles 0 61 0"
+ent_fire dmHandle9 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1919.23 -3110.83 -368"
+ent_fire dmHandle9 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 61 0"
+ent_fire dmHandle9 addoutput "OnTrigger dmHandle10:trigger::0.001"
+ent_fire dmHandle9 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle10"
+ent_fire dmHandle10 addoutput "origin -2579.34 -3278.91 -384"
+ent_fire dmHandle10 addoutput "angles 0 86 0"
+ent_fire dmHandle10 addoutput "OnTrigger DM_SPAWN:addoutput:origin -2579.34 -3278.91 -368"
+ent_fire dmHandle10 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 86 0"
+ent_fire dmHandle10 addoutput "OnTrigger dmHandle11:trigger::0.001"
+ent_fire dmHandle10 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle11"
+ent_fire dmHandle11 addoutput "origin -2391.28 -1956.86 -384"
+ent_fire dmHandle11 addoutput "angles 0 0 0"
+ent_fire dmHandle11 addoutput "OnTrigger DM_SPAWN:addoutput:origin -2391.28 -1956.86 -368"
+ent_fire dmHandle11 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 0 0"
+ent_fire dmHandle11 addoutput "OnTrigger dmHandle12:trigger::0.001"
+ent_fire dmHandle11 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle12"
+ent_fire dmHandle12 addoutput "origin -1422.28 -1119.06 -252"
+ent_fire dmHandle12 addoutput "angles 0 227 0"
+ent_fire dmHandle12 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1422.28 -1119.06 -236"
+ent_fire dmHandle12 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 227 0"
+ent_fire dmHandle12 addoutput "OnTrigger dmHandle13:trigger::0.001"
+ent_fire dmHandle12 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle13"
+ent_fire dmHandle13 addoutput "origin -2068.84 -1779.64 -252"
+ent_fire dmHandle13 addoutput "angles 0 62.5 0"
+ent_fire dmHandle13 addoutput "OnTrigger DM_SPAWN:addoutput:origin -2068.84 -1779.64 -236"
+ent_fire dmHandle13 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 62.5 0"
+ent_fire dmHandle13 addoutput "OnTrigger dmHandle14:trigger::0.001"
+ent_fire dmHandle13 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle14"
+ent_fire dmHandle14 addoutput "origin -1765.5 -1053.01 -382"
+ent_fire dmHandle14 addoutput "angles 0 0 0"
+ent_fire dmHandle14 addoutput "OnTrigger DM_SPAWN:addoutput:origin -1765.5 -1053.01 -366"
+ent_fire dmHandle14 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 0 0"
+ent_fire dmHandle14 addoutput "OnTrigger dmHandle15:trigger::0.001"
+ent_fire dmHandle14 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle15"
+ent_fire dmHandle15 addoutput "origin -2434.55 -2338.13 -192"
+ent_fire dmHandle15 addoutput "angles 0 0 0"
+ent_fire dmHandle15 addoutput "OnTrigger DM_SPAWN:addoutput:origin -2434.55 -2338.13 -176"
+ent_fire dmHandle15 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 0 0"
+ent_fire dmHandle15 addoutput "OnTrigger dmHandle16:trigger::0.001"
+ent_fire dmHandle15 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle16"
+ent_fire dmHandle16 addoutput "origin -2736.46 -2832.32 -192"
+ent_fire dmHandle16 addoutput "angles 0 0 0"
+ent_fire dmHandle16 addoutput "OnTrigger DM_SPAWN:addoutput:origin -2736.46 -2832.32 -176"
+ent_fire dmHandle16 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 0 0"
+ent_fire dmHandle16 addoutput "OnTrigger dmHandle17:trigger::0.001"
+ent_fire dmHandle16 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle17"
+ent_fire dmHandle17 addoutput "origin -109.48 -1393.82 -371.75"
+ent_fire dmHandle17 addoutput "angles 0 237.5 0"
+ent_fire dmHandle17 addoutput "OnTrigger DM_SPAWN:addoutput:origin -109.48 -1393.82 -355.75"
+ent_fire dmHandle17 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 237.5 0"
+ent_fire dmHandle17 addoutput "OnTrigger dmHandle18:trigger::0.001"
+ent_fire dmHandle17 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_create logic_relay
+test_wait 0.005
+ent_fire logic_relay addoutput "targetname dmHandle18"
+ent_fire dmHandle18 addoutput "origin -176.5 -2462.07 -384"
+ent_fire dmHandle18 addoutput "angles 0 238 0"
+ent_fire dmHandle18 addoutput "OnTrigger DM_SPAWN:addoutput:origin -176.5 -2462.07 -368"
+ent_fire dmHandle18 addoutput "OnTrigger DM_SPAWN:addoutput:angles 0 238 0"
+ent_fire dmHandle18 addoutput "OnTrigger dmHandle1:trigger::0.001"
+ent_fire dmHandle18 addoutput "classname LRLY"
+test_wait 0.025
+
+ent_fire dmHandle1 trigger
+test_wait 0.005
+ent_fire PDYN addoutput "classname prop_dynamic"
+ent_fire PPHY addoutput "classname prop_physics"
+ent_fire BRSH addoutput "classname func_brush"
+ent_fire RROOMV addoutput "classname func_respawnroomvisualizer"
+ent_fire RROOM addoutput "classname func_respawnroom"
+ent_fire THRT addoutput "classname trigger_hurt"
+ent_fire RGEN addoutput "classname func_regenerate"
+ent_fire SPN addoutput "classname info_player_teamspawn"
+ent_fire LTMR addoutput "classname logic_timer"ent_fire LRLY addoutput "classname logic_relay"ent_fire GTXT addoutput "classname game_text"ent_fire TRGR addoutput "classname trigger_multiple"
+
+mp_restartround 1;mp_teams_unbalance_limit 0;mp_friendlyfire 1;echo dm_canals Loaded! ;

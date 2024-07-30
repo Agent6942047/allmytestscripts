@@ -1,0 +1,6 @@
+ent_create item_healthkit_medium;
+test_wait .02;
+ent_setname  dbr1kit;test_wait .02;
+ent_fire dbr1kit addoutput"hammerid 155";
+test_wait .02;
+ent_keyvalue 154 classname player origin"-676 -2492 -182"OnPlayerTouch"dbr1kit,addoutput,origin -676 -2492 -182";

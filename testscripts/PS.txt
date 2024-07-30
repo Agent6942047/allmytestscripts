@@ -1,0 +1,28 @@
+r_drawdetailprops 0
+mat_hdr_level 1;r_drawdetailprops 0;cl_detaildist 0;cl_detailfade 0;mp_decals 0;r_decals 0;test_wait .1
+r_shadows 0;mat_hdr_level 0
+cl_detailfade 0
+r_rimlight 0
+cl_detaildist 0 
+r_drawdetailprops 0
+mp_decals 0
+r_decals 0 
+r_shadows 0
+mat_bloom 0
+mat_reduceparticles 1
+r_3dsky 1
+rope_subdiv 0
+rope_rendersolid 0
+rope_rendersolid 0
+rope_shake 0
+rope_collide 0
+rope_smooth 0
+rope_subdiv 0;test_wait .1
+rope_rendersolid 0;rope_shake 0;rope_collide 0;rope_smooth 0
+r_drawropes 0
+mat_drawwater 0
+Test_wait .01;fps_max 60
+r_lod 0
+r_rimlight 0
+mat_hdr_level 0
+test_wait.01;r_lod -1

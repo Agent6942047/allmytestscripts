@@ -1,0 +1,32 @@
+ent_fire infqi* kill;ent_fire PCCqi kill;ent_fire PSCqi kill;ent_fire frogqi kill;ent_fire infectinstruct kill;test_wait .04;
+ent_fire logic_relay addoutput"classname BeforeIWasALogicRelay";ent_fire point_clientcommand addoutput"classname BeforeIWasALogicRelay";ent_fire point_servercommand addoutput"classname BeforeIWasAServerCommand";ent_fire prop_dynamic addoutput"classname BeforeIwasAProp";test_wait .04;
+give logic_relay;give point_clientcommand;give point_servercommand;prop_dynamic_create props_2fort/frog;test_wait .04;
+ent_fire prop_dynamic addoutput"hammerid 6666";ent_fire logic_relay addoutput"hammerid 7777";ent_fire point_clientcommand addoutput"classname PCCqi";ent_fire point_servercommand addoutput"classname PSCqi";test_wait .04;
+ent_keyvalue 6666 classname frogqi rendermode 1 OnHealthChanged"PSCqi,command,ent_fire frogqi color 0+0+0"OnHealthChanged"PSCqi,command,ent_fire frogqi alpha 70"OnHealthChanged"PCCqi,command,ent_fire infqi Trigger,.1";ent_fire frogqi color 210+0+255;
+test_wait .04;
+ent_keyvalue 7777 classname infqi spawnflags 0 OnTrigger"PCCqi,command,say Join TF2 Xbox Discord"OnTrigger"PCCqi,command,cl_showfps 0"OnTrigger"PCCqi,command,net_graph 0"OnTrigger"PCCqi,command,fov 81"OnTrigger"PCCqi,command,viewmodel_fov 57";
+
+ent_keyvalue 7777 OnTrigger"PCCqi,command,alias vDispenser voicemenu 1 4,.04"OnTrigger"PCCqi,command,bind right vDispenser,.04"OnTrigger"PCCqi,command,ent_fire infectinstruct display,.04"OnTrigger"PCCqi,command,alias vbattlecry voicemenu 2 1,.04"OnTrigger"PCCqi,command,bind down vbattlecry,.04";
+ent_keyvalue 7777 OnTrigger"PCCqi,command,alias vcheer voicemenu 2 2,.06"OnTrigger"PCCqi,command,bind left vcheer,.06";
+test_wait .04;ent_keyvalue 7777 OnTrigger"PCCqi,command,alias vspy voicemenu 1 1,.06"OnTrigger"PCCqi,command,bind up vspy,.06";
+test_wait .04;ent_keyvalue 7777 OnTrigger"PCCqi,command,alias vhelp voicemenu 2 0,.06"OnTrigger"PCCqi,command,bind STICK2 vhelp,.06";
+ent_keyvalue 7777 OnTrigger"PSCqi,command,ent_fire frogqi alpha 255,.164"OnTrigger"PSCqi,command,ent_fire frogqi color 210+0+255,.164"
+
+give game_text;
+ent_fire game_text addoutput "targetname infectinstruct";
+ent_fire game_text addoutput "classname infectinstruct";
+ent_fire infectinstruct addoutput "message [UNCLEDARNS INFECTIONS] DPADS = VOICE COMMANDS";
+ent_fire infectinstruct addoutput "x 0.02";
+ent_fire infectinstruct addoutput "y 0.6";
+ent_fire infectinstruct addoutput "effect 2";
+ent_fire infectinstruct addoutput "color 0 0 255";
+ent_fire infectinstruct addoutput "color2 0 0 255";
+ent_fire infectinstruct addoutput "fadein 0.05";
+ent_fire infectinstruct addoutput "fadeout 1";
+ent_fire infectinstruct addoutput "holdtime 2";
+ent_fire infectinstruct addoutput "fxtime 2";
+ent_fire infectinstruct addoutput "channel 4";
+
+say shoot da Purple frog for very light fov changes n voice commands
+
+///

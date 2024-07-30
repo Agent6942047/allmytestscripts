@@ -1,0 +1,50 @@
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick SaulGaming8907,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick SPAWNCAMPER1,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick theschmoe01,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick SANTA CLAUS4389,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Delfy 2,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Unknown908,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick vnsb,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick DIGDIX 70 X,.06";
+give point_clientcommand
+test_wait .05
+ent_fire point_clientcommand addoutput "targetname entity_pcc_spawn"
+ent_fire entity_pcc_spawn addoutput "classname entity_pcc_spawn"
+test_wait .05
+
+
+give trigger_multiple
+test_wait .05
+ent_fire trigger_multiple addoutput "targetname redtrig"
+ent_fire trigger_multiple addoutput "classname redtrig"
+test_wait .05
+ent_fire redtrig addoutput "origin -30 -193 296"
+ent_fire redtrig addoutput "maxs 3632.5 4881 1072.5"
+ent_fire redtrig addoutput "mins -3632.5 -4881 -1072.5"
+ent_fire redtrig addoutput "solid 2"
+ent_fire redtrig addoutput "spawnflags 1"
+test_wait .05
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind L_SHOULDER invprev,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind UP voicemenu 2 1,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind RIGHT voicemenu 2 4,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind DOWN voicemenu 2 5,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind LEFT voicemenu 1 1,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind STICK1 +duck,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind STICK2 voicemenu 0 0,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind A_BUTTON +jump,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind B_BUTTON +reload,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind LEFT X_BUTTON taunt,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind Y_BUTTON togglescores,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind R_SHOULDER invnext,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind L_TRIGGER +attack2,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind R_TRIGGER +attack,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind S1_UP xmove,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind S2_UP xlook,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind L_TRIGGER +attack2,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind L_TRIGGER +attack2,0"
+ent_fire redtrig addoutput "OnStartTouch entity_pcc_spawn,command,bind L_TRIGGER +attack2,0"
+
+
+say CHEATERS GONE QUICKFIX
+
+///

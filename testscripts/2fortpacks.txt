@@ -1,0 +1,83 @@
+alias makefrog "prop_dynamic_create props_2fort/frog";
+ent_fire ammo_* kill
+ent_fire health_* kill
+test_wait .1
+
+setpos -639 -3896 504;setang 90 180 0
+noclip
+test_wait .1
+
+ent_create item_ammopack_small
+test_wait .05
+ent_setname ammo_blu_1
+ent_fire ammo_blu_1 addoutput "origin -212 -1783 259"
+ent_fire ammo_blu_1 addoutput "OnPlayerTouch ammo_blu_1,addoutput,origin -212 -1783 259,10"
+test_wait .05
+ent_create item_ammopack_medium
+test_wait .05
+ent_setname ammo_blu_2
+ent_fire ammo_blu_2 addoutput "origin -665 -2476 -190"
+ent_fire ammo_blu_2 addoutput "OnPlayerTouch ammo_blu_2,addoutput,origin -665 -2476 -190,10"
+test_wait .05
+ent_create item_healthkit_small
+test_wait .05
+ent_setname health_blu_1
+ent_fire health_blu_1 addoutput "origin -211 -1824 259"
+ent_fire health_blu_1 addoutput "OnPlayerTouch health_blu_1,addoutput,origin -211 -1824 259,10"
+test_wait .05
+ent_create item_healthkit_medium
+test_wait .05
+ent_setname health_blu_2
+ent_fire health_blu_2 addoutput "origin -665 -2540 -190"
+ent_fire health_blu_2 addoutput "OnPlayerTouch health_blu_2,addoutput,origin -665 -2540 -190,10"
+test_wait .05
+
+ent_create item_ammopack_small
+test_wait .05
+ent_setname ammo_red_1
+ent_fire ammo_red_1 addoutput "origin 212 1785 259"
+ent_fire ammo_red_1 addoutput "OnPlayerTouch ammo_red_1,addoutput,origin 212 1785 259,10"
+test_wait .05
+ent_create item_ammopack_medium
+test_wait .05
+ent_setname ammo_red_2
+ent_fire ammo_red_2 addoutput "origin 665 2476 -190"
+ent_fire ammo_red_2 addoutput "OnPlayerTouch ammo_red_2,addoutput,origin 665 2476 -190,10"
+test_wait .05
+ent_create item_healthkit_small
+test_wait .05
+ent_setname health_red_1
+ent_fire health_red_1 addoutput "origin 211 1825 259"
+ent_fire health_red_1 addoutput "OnPlayerTouch health_red_1,addoutput,origin 211 1825 259,10"
+test_wait .05
+ent_create item_healthkit_medium
+test_wait .05
+ent_setname health_red_2
+ent_fire health_red_2 addoutput "origin 665 2540 -190"
+ent_fire health_red_2 addoutput "OnPlayerTouch health_red_2,addoutput,origin 665 2540 -190,10"
+test_wait .1
+
+makefrog;test_wait .02;
+ent_setname frog4;test_wait .02;
+ent_fire frog4 addoutput "origin -4706 185 120";ent_fire frog4 addoutput "angles 0 45";
+makefrog;test_wait .02;
+ent_setname frog5;test_wait .02;
+ent_fire frog5 addoutput "origin -4776 185 120";ent_fire frog5 addoutput "angles 0 45";
+makefrog;test_wait .02;
+ent_setname frog6;test_wait .02;
+ent_fire frog6 addoutput "origin -4228 370 75";ent_fire frog6 addoutput "angles 0 180";
+
+// fix incorrect model position bug
+ent_fire ammo_* disable
+ent_fire health_* disable
+test_wait .1
+ent_fire ammo_* enable
+ent_fire health_* enable
+tf_flag_caps_per_round 9
+mp_autoteambalance 1;
+mp_friendlyfire 0;
+mp_respawnwavetime 8
+
+
+
+///

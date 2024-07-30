@@ -1,0 +1,20 @@
+impulse 101;noclip;setpos -5457 -563 571;setang 90 0;test_wait .02;
+Downalias makehorse2 "prop_dynamic_create props_c17/statue_horse";
+alias makeplank "prop_dynamic_create props_mining/support_wall001a"
+impulse 101;noclip;setpos -5457 -563 571;setang 90 0;test_wait .02;
+makehorse2;test_wait .02;
+ent_setname horse;test_wait .02;
+ent_fire horse addoutput "origin 430 622 0";ent_fire horse addoutput "angles 0 0";ent_fire horse setparent me;
+ent_fire horse ClearParent;
+makeplank;test_wait .02;
+ent_setname plank6;test_wait .02;
+ent_fire plank6 addoutput "origin 290 -260 -190";ent_fire plank6 addoutput "angles -45 90";addoutput"targetname me";
+ent_fire plank6 setparent me;
+ent_fire plank6 ClearParent;
+ent_fire plank6 color 225+0+225;
+
+say WHAT IS THAT MELODY?
+
+
+
+///

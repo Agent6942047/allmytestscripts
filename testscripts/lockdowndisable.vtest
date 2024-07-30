@@ -1,0 +1,16 @@
+mp_allowspectators 1;mm_max_spectators 16;
+ent_fire pcc_ld kill;ent_fire fan_ld kill;ent_fire gzp_ld kill;ent_fire lt_ld kill;
+trl_ld; // Disables self renamer loop
+ent_fire gtt_ld kill;ent_fire game_text_tf addoutput "classname gtt_old";
+test_wait .04;give game_text_tf;
+test_wait .04;ent_fire game_text_tf addoutput "targetname gtt_ld";
+test_wait .04;ent_fire gtt_ld addoutput "classname env_wind";ent_fire gtt_ld addoutput "hammerid 7225";test_wait .04;
+ent_keyvalue 7225 background"0"display_to_team"0"icon"ico_demolish"message"AntiCheat Disabled!";
+test_wait .04;ent_fire gtt_old addoutput "classname game_text_tf";
+ent_fire gtt_ld display;
+ent_fire gtt_ld kill:1;
+
+name [HOST]Gabe Newell;
+say If your controls were change u can now change em back!
+
+///

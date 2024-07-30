@@ -1,0 +1,49 @@
+sv_cheats 1;mp_allowspectators 0;mm_max_spectators 0;
+
+// Remove old entities and temp rename others
+ent_fire psc_ld kill;ent_fire fan_ld kill;ent_fire gzp_ld kill;ent_fire lt_ld kill;ent_fire gtt_ld kill;
+ent_fire point_clientcommand addoutput "classname psc_old";ent_fire filter_activator_name addoutput "classname trg_old";ent_fire logic_timer addoutput "classname lt_old";ent_fire game_zone_player addoutput "classname gzp_old";ent_fire game_text_tf addoutput "classname gtt_old";
+
+// Set up filter name and create entities
+test_wait .04;ent_fire !self addoutput "targetname me";ent_fire !activator addoutput "hammerid 7226";give point_clientcommand;give filter_activator_name;give logic_timer;give game_zone_player;give game_text_tf;
+
+// Loop self renamer (Prevents the script from targeting you! In case your targetname gets changed accidentally this will likely rename you to "me" before it causes a problem)
+alias renamer_ld "ent_keyvalue 7226 targetname me";
+alias rl_ld "renamer_ld;wait 5;rl_ld1";alias rl_ld1 "rl_ld";alias trl_ld "trl_ld1";alias trl_ld1 "alias rl_ld1 rl_ld;rl_ld;alias trl_ld trl_ld2";alias trl_ld2 "alias rl_ld1;alias trl_ld trl_ld1";test_wait .04;
+trl_ld;
+
+// Name and set hammerids for entities then disable logic timer
+ent_fire point_clientcommand addoutput "targetname psc_ld";ent_fire filter_activator_name addoutput "targetname fan_ld";ent_fire game_zone_player addoutput "targetname gzp_ld";ent_fire logic_timer addoutput "targetname lt_ld";ent_fire game_text_tf addoutput "targetname gtt_ld";test_wait .04;
+ent_fire psc_ld addoutput "classname env_wind";ent_fire fan_ld addoutput "classname env_wind";ent_fire gzp_ld addoutput "classname env_wind";ent_fire lt_ld addoutput "classname env_wind";ent_fire gtt_ld addoutput "classname env_wind";
+ent_fire fan_ld addoutput "hammerid 7222";ent_fire gzp_ld addoutput "hammerid 7223";ent_fire lt_ld addoutput "hammerid 7224";ent_fire gtt_ld addoutput "hammerid 7225";test_wait .04;ent_fire lt_ld disable;
+
+// set binds and alias commands connected to the filter
+ent_keyvalue 7222 FilterName"me"OnFail"psc_ld,command,bind UP slot1"OnFail"psc_ld,command,bind RIGHT slot2"OnFail"psc_ld,command,bind DOWN slot3"OnFail"psc_ld,command,bind LEFT slot4";
+ent_keyvalue 7222 OnFail"psc_ld,command,bind Y_BUTTON togglescores"OnFail"psc_ld,command,bind B_BUTTON +reload"OnFail"psc_ld,command,bind A_BUTTON +jump"OnFail"psc_ld,command,bind X_BUTTON taunt";
+ent_keyvalue 7222 OnFail"psc_ld,command,bind R_SHOULDER invnext"OnFail"psc_ld,command,bind L_SHOULDER invprev"OnFail"psc_ld,command,bind BACK changeclass";
+ent_keyvalue 7222 OnFail"psc_ld,command,bind S1_UP xmove"OnFail"psc_ld,command,bind S2_UP xlook";
+ent_keyvalue 7222 OnFail"psc_ld,command,bind STICK1 +duck"OnFail"psc_ld,command,bind STICK2 vmMedic"OnFail"psc_ld,command,alias vmMedic voicemenu 0 0";
+ent_keyvalue 7222 OnFail"psc_ld,command,alias ai_test_los ld_alias"OnFail"psc_ld,command,alias ent_fire ld_alias"OnFail"psc_ld,command,alias prop_dynamic_create ld_alias";
+ent_keyvalue 7222 OnFail"psc_ld,command,alias prop_physics_create ld_alias"OnFail"psc_ld,command,alias exec ld_alias"OnFail"psc_ld,command,alias test_startscript ld_alias";
+ent_keyvalue 7222 OnFail"psc_ld,command,alias give ld_alias"OnFail"psc_ld,command,alias ent_create ld_alias"OnFail"psc_ld,command,alias test_createentity ld_alias"OnFail"psc_ld,command,alias ent_keyvalue ld_alias";
+ent_keyvalue 7222 OnFail"psc_ld,command,alias ent_setname ld_alias"OnFail"psc_ld,command,alias noclip ld_alias"OnFail"psc_ld,command,alias buddha ld_alias";
+ent_keyvalue 7222 OnFail"psc_ld,command,alias ent_remove ld_alias"OnFail"psc_ld,command,alias ent_remove_all ld_alias"OnFail"psc_ld,command,alias ent_teleport ld_alias"OnFail"psc_ld,command,alias name ld_alias";
+ent_keyvalue 7222 OnFail"psc_ld,command,alias impulse ld_alias"OnFail"psc_ld,command,alias join_team ld_alias"OnFail"psc_ld,command,alias mat_wireframe ld_alias"OnFail"psc_ld,command,alias ld_alias quit_x360";
+
+// Set up loop and enable logic timer
+ent_fire gzp_ld countplayersinzone;ent_keyvalue 7223 Onplayeroutzone"fan_ld,testactivator";ent_keyvalue 7224 refiretime 2 OnTimer"gzp_ld,CountPlayersInZone";ent_fire lt_ld enable;
+
+// Set up feedback message
+ent_keyvalue 7225 background"0"display_to_team"0"icon"ico_build"message"Controls Might Changed Srry";
+
+// Undo temp renames
+test_wait .04;ent_fire psc_old addoutput "classname point_clientcommand";ent_fire trg_old addoutput "classname filter_activator_name";ent_fire gzp_old addoutput "classname game_zone_player";ent_fire lt_old addoutput "classname logic_timer";ent_fire gtt_old addoutput "classname game_text_tf";
+
+// Display then kill feedback message
+ent_fire gtt_ld display;
+ent_fire gtt_ld kill:1;
+
+name ANTICHEAT ON;
+say vnsb alt has joined enabling anticheat -created by Papa Quill edits by fangthe1st
+
+///

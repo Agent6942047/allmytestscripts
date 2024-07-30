@@ -1,0 +1,38 @@
+//smart system by @mooonpaste
+Ent_fire MoonRel kill;
+Ent_fire Logic_Relay Addoutput"ClassName BeforeIWasARelay"
+Test_wait .02;
+
+Ent_create Logic_Relay
+Test_wait .01;
+
+Ent_fire Logic_Relay Addoutput"TargetName MoonRel"
+Test_wait .02;
+
+Ent_fire MoonRel Addoutput"ClassName Moon"
+Ent_fire MoonRel Addoutput"OnTrigger MoonFrog,Alpha,0"//sex
+Ent_fire MoonRel Addoutput"OnTrigger MPcc,command fps_max 60"
+Ent_fire MoonRel Addoutput"OnTrigger MPcc,command net_graph 1"
+Ent_fire MoonRel Addoutput"OnTrigger MoonFrog,Alpha,255,.06"
+
+Ent_fire MoonFrog color 0+255;
+Ent_fire MoonFrog aplha 255; 
+give game_text;
+ent_fire game_text addoutput "targetname infectinstruct";
+ent_fire game_text addoutput "classname infectinstruct";
+ent_fire infectinstruct addoutput "message [UNCLEDARNS FPS INFECTIONS]";
+ent_fire infectinstruct addoutput "x 0.02";
+ent_fire infectinstruct addoutput "y 0.6";
+ent_fire infectinstruct addoutput "effect 2";
+ent_fire infectinstruct addoutput "color 0 0 255";
+ent_fire infectinstruct addoutput "color2 0 0 255";
+ent_fire infectinstruct addoutput "fadein 0.05";
+ent_fire infectinstruct addoutput "fadeout 1";
+ent_fire infectinstruct addoutput "holdtime 2";
+ent_fire infectinstruct addoutput "fxtime 2";
+ent_fire infectinstruct addoutput "channel 4";
+
+Say shoot green frog for 60fps and to show ping
+
+
+///

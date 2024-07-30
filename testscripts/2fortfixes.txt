@@ -1,0 +1,18 @@
+impulse 101;noclip;setpos -5457 -563 571;setang 90 0;test_wait .02;
+alias makeplank "prop_dynamic_create props_mining/support_wall001a"
+makeplank;test_wait .02;
+ent_setname plank3;test_wait .02;
+ent_fire plank3 addoutput "origin 3 -1182 75";ent_fire plank3 addoutput "angles 45 -90";addoutput"targetname me";
+ent_fire plank3 setparent me;
+ent_fire plank3 ClearParent;
+makeplank;test_wait .02;
+ent_setname plank5;test_wait .02;
+ent_fire plank5 addoutput "origin -279 261 -200";ent_fire plank5 addoutput "angles -45 -90";
+ent_fire plank5 color 225+0+225;addoutput"targetname me";
+ent_fire plank5 setparent me;
+ent_fire plank5 ClearParent;
+
+say Heisenberg Meth Inbound
+
+
+///

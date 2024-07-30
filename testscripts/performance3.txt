@@ -1,0 +1,7 @@
+fps_max 30
+fov 75
+r_drawviewmodel 0
+viewmodel_fov 0
+mat_drawwater 0;
+name something offensive
+///

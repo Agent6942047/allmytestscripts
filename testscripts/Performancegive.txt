@@ -1,0 +1,17 @@
+mp_idledealmethod 1;mp_idlemaxtime 2;mp_allowspectators 0;
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick SPAWNCAMPER1,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick theschmoe01,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick SANTA CLAUS4389,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Delfy 2,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Unknown908,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick LawfulJarl60863,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Fulcruv,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick SaulGaming8907,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Rub My Wussee,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick vnsb,.06";
+ent_fire LTKicker addoutput "ontimer PSCKicker,command,kick Knneegrowz,.06";
+test_startscript kickdeka.txt;
+
+say kicking AFKS and Cheaters
+
+///
